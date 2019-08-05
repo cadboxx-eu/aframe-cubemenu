@@ -1,0 +1,28 @@
+{
+  "name": "a-cube-menu",
+  "version": "1.0.0",
+  "description": "A-Frame component for creating a controller held menu in WebVR",
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "aframe",
+    "webvr",
+    "virtual reality"
+  ],
+  "preferGlobal": true, // unsure
+  "bin": {
+    // unsure
+  },
+  //"scripts": {},
+  //"devDependencies": {},
+  "dependencies": {
+    "aframe" : "^0.9.2"
+  }
+}

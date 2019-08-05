@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cube Menu</title>
+		<script src = "https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+      
+      <script src="a-cubemenu.js"></script>
+      <script src="a-side.js"></script>
+      <script src="a-button.js"></script>
+      
+      <script>
+        function buttonClick() {
+          console.log('yoooo');
+        }
+      </script>
+  </head>
+	
+	<body>
+			
+      <a-scene background="color: white" cursor="rayOrigin: mouse">
+        <a-assets>
+          <a-mixin id="controller-right" vive-controls="hand: right" oculus-touch-controls="hand: right" windows-motion-controls="hand: right" gearvr-controls daydream-controls oculus-go-controls></a-mixin>
+
+          <a-mixin id="controller-left" vive-controls="hand: left" oculus-touch-controls="hand: left" windows-motion-controls="hand: left" gearvr-controls daydream-controls oculus-go-controls></a-mixin>
+        </a-assets>
+
+	
+			
+			
+
+        <a-camera position="0 2 1"></a-camera>
+
+        <a-entity id="right-hand" laser-controls="" mixin="controller-right">
+          <a-cubemenu rotation="-90 0 0" opacity="0.4" color="red" height=".3" width=".3" depth=".3" toggleevent="bbuttondown">
+            <a-side face="front" color="green" opacity=".4" distance=".01">
+              
+              <a-button opacity=".5" color="red" text="align: center; color: black; value: hello;" onclick="buttonClick()" hover-color="green" ></a-button>
+              <a-button color="blue" text="align: center; width: 1; height: 1; value: wuddup; color: black"></a-button>
+              <a-button color="blue" text="align: center; width: 1; height: 1; value: wuddup; color: black"></a-button>
+              <a-button color="blue" text="align: center; width: 1; height: 1; value: wuddup; color: black"></a-button>
+              <a-button color="blue" text="align: center; width: 1; height: 1; value: wuddup; color: black"></a-button>
+              <a-button color="blue" text="align: center; width: 1; height: 1; value: wuddup; color: black"></a-button>
+              <!--
+              <a-button color="purple" ></a-button>
+              <a-button color="yellow"></a-button>
+              -->
+            </a-side>
+              
+            <a-side face="right" color="blue" opacity="1">
+              <a-button color="black" text="value: 2 sides; height: 1: width: 1;"></a-button>
+            </a-side>
+          </a-cubemenu>
+     
+        </a-entity>
+        <a-entity id="left-hand" laser-controls="hand: left" raycaster="" mixin="controller-left">
+          
+        </a-entity>
+
+		</a-scene>
+	</body>
+</html>
