@@ -1,6 +1,6 @@
 ## Credits
 Justin Slud created this repository.
-This component uses many ideas from Paul Armstrong's host-menu cube and Roland DuBois' A-GUI components. 
+This component uses many ideas from Paul Armstrong's [host-menu cube](https://math.nist.gov/~SRessler/stm_scene/) and Roland Dubois' [A-GUI components](https://github.com/rdub80/aframe-gui). 
 
 | Component  | What it is | Where it goes |
 | ---------- | ---------- | - |
