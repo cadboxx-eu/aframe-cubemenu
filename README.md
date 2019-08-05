@@ -1,5 +1,4 @@
 ## Credits
-Justin Slud created this repository.
 This component uses many ideas from Paul Armstrong's [host-menu cube](https://math.nist.gov/~SRessler/stm_scene/) and Roland Dubois' [A-GUI components](https://github.com/rdub80/aframe-gui). 
 
 | Component  | What it is | Where it goes |
@@ -63,7 +62,7 @@ No text component. You can add your own to the button as <a-entity> or <a-text> 
 <html>
   <head>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <script src="cube"></script>
+    <script src="http://github.io/justinslud/aframe-cubemenu/dist/aframe-cubemenu.js"></script>
   </head>
   
   <body>
@@ -81,7 +80,10 @@ No text component. You can add your own to the button as <a-entity> or <a-text> 
 </html>  
 ```
 
-## Download
+## Install
+```
+npm install -i aframe-cubemenu
+```
 
 
 
