@@ -14,6 +14,7 @@
             to: '1.5 1.5 1.5',          
           });
         }
+        function enterVR() { document.querySelector('a-scene').enterVR(); }
       </script>
       
   </head>
@@ -36,25 +37,28 @@
 
         <a-entity id="right-hand" laser-controls="" mixin="controller-right">
           
-          <a-cubemenu rotation="0 0 0" opacity="0.4" color="red" height=".3" width=".3" depth=".3" toggleevent="bbuttondown" webrotateevent="">
+          <a-cubemenu rotation="0 0 0" color="red" height=".3" width=".3" depth=".3" toggleevent="bbuttondown" webrotateevent="click">
             
-            <a-side id="boxButtons" face="front" color="#4CC3D9" opacity=".4" distance=".01">
+            <a-side id="boxButtons" face="front" color="#4CC3D9" opacity="1" distance=".01">
               
-              <a-button opacity=".5" color="red" text="align: center; color: black; value: Expand Box; width: 1" onclick="expandBox()" hover-color="green" ></a-button>
-              <a-button color="blue" text="align: center;  width: 1; value: wuddup; color: black"></a-button>
-              <a-button color="blue" text="align: center; width: 1; value: wuddup; color: black"></a-button>
+              <a-button opacity="1" color="blue" text="align: center; color: black; value: Expand Box; width: 1" onclick="expandBox()" hover-color="green" ></a-button>
+              <a-button color="blue" text="align: center;  width: 1; value: Enter VR; color: black" onclick="enterVR()"></a-button>
+              <a-button color="blue" text="align: center; width: 1; value: Flatten Me!; color: black"></a-button>
               
             </a-side>
               
             <a-side id="sphereButtons" face="right" color="#EF2D5E" opacity="1">
-              <a-button color="black" text="value: 2 sides; height: 1: width: 1;"></a-button>
+              <a-button hovercolor="black" color="black" text="align: center; value:; width: 1"></a-button>
             </a-side>
             
             <a-side id="cylinderButtons" face="left" color="#FFC65D">
             
             </a-side>
             
-            <a-side id="otherButtons" face="back"></a-side>
+            <a-side id="otherButtons" face="back" distance=".15">
+              <a-button color="orange" text="color:black; width: .5; align: center; value: Click B-Button on Oculus!"></a-button>
+              <a-button color="orange" text="color: black; width: .5; align: center; value: Click Trackpad on Vive!"></a-button>
+            </a-side>
             <a-side face="top"></a-side>
           </a-cubemenu>
      

@@ -15,7 +15,7 @@ AFRAME.registerComponent('cubemenu', {
     toggleevent: {type: 'string'},
     show: {type: 'boolean', default: true},
     showinweb: {type: 'boolean', default: false}, // could have flat vs cube 
-    axis: {type: 'string', default: 'x'},
+    axis: {type: 'string', default: 'y'},
   
   },
   
@@ -120,7 +120,7 @@ AFRAME.registerComponent('cubemenu', {
     });
     
     document.addEventListener(webrotateevent, evt => {
-      el.object3D.rotation[axis] += .5;
+      el.object3D.rotation[axis] += .25;
     });
     
     parent.addEventListener(toggleevent, function() {

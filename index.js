@@ -1,1 +1,1 @@
-require('./src/a-cubemenu.js');
+require('./dist/aframe-cubemenu.js');

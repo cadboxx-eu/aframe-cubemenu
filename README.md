@@ -54,8 +54,12 @@ This component uses many ideas from Paul Armstrong's [host-menu cube](https://ma
 | switchhands | changes which hand holds the cube and which has the raycaster |
 
 
+## More Information
 
-No text component. You can add your own to the button as <a-entity> or <a-text> child.
+- No text component. You can add your own to the button as in the example or <a-text> child.
+- It is important to specify the width, height, and depth of the menu inside the <a-cubemenu> tag
+- Currently buttons can only be aligned vertically
+
 
 ## Sample Usage
 ```html
